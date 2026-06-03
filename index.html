@@ -1,298 +1,65 @@
-<!-- File: index1.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-  />
-  <title>Sherzod Norboboev | NLP Master's Student & Backend (Oracle) Developer</title>
-  <meta name="description" content="Sherzod Norboboev — MBZUAI NLP master's student with prior backend experience (Oracle SQL/PLSQL, JS/HTML/CSS, AngularJS, Bootstrap). Low-resource NLP, speech recognition, and human-AI interaction projects." />
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060712" />
+    <meta name="color-scheme" content="dark light" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/male-technologist.png" hreflang="en-us" />
+    <title>Sherzod Norboboev | AI/NLP MSc Student & ML Engineer</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Sherzod Norboboev is an MSc Natural Language Processing student at MBZUAI, AI/NLP internship candidate, and former backend developer interested in LLMs, RAG, ASR, AST, speech processing, and applied AI systems."
+    />
+    <meta name="author" content="Sherzod Norboboev" />
+    <meta
+      name="keywords"
+      content="Sherzod Norboboev, MBZUAI, Natural Language Processing, NLP, Machine Learning, LLMs, RAG, ASR, AST, speech processing, ML engineer, AI internship"
+    />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="https://sherzodnorboboyev.github.io/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Sherzod Norboboev | NLP @ MBZUAI" />
-  <meta property="og:description" content="NLP master's student (MBZUAI) with Oracle SQL/PLSQL and frontend background. Projects, skills, experience, and contact." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sherzodnorboboyev.github.io/" />
-  <meta property="og:image" content="images/male-technologist.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sherzodnorboboyev.github.io/" />
+    <meta property="og:title" content="Sherzod Norboboev | AI/NLP MSc Student & ML Engineer" />
+    <meta
+      property="og:description"
+      content="MSc NLP student at MBZUAI, AI/NLP internship candidate, and former backend developer interested in LLMs, RAG, ASR, AST, speech processing, and applied AI systems."
+    />
+    <meta property="og:image" content="https://sherzodnorboboyev.github.io/og-image.svg" />
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Sherzod Norboboev",
-    "jobTitle":"Master's Student (NLP)",
-    "affiliation":{"@type":"CollegeOrUniversity","name":"MBZUAI"},
-    "email":"mailto:Sherzod.Norboboev@mbzuai.ac.ae",
-    "telephone":"+971529869191",
-    "url":"https://sherzodnorboboyev.github.io/",
-    "sameAs":[
-      "https://www.linkedin.com/in/sherzod-norboboev-37b346155/",
-      "https://github.com/SherzodNorboboyev",
-      "https://www.kaggle.com/sherzodnorboboev",
-      "https://t.me/nnshshbb"
-    ]
-  }
-  </script>
-</head>
-<body>
-<div id="site">
-  <!-- Theme switch (existing styles/scripts bilan) -->
-  <div class="switch-wrapper" aria-label="Theme toggle">
-    <div class="sun" aria-hidden="true"></div>
-    <div class="toggle-wrapper">
-      <input type="checkbox" id="switch" aria-label="Toggle dark mode" />
-      <label for="switch" id="switch1">Toggle</label>
-    </div>
-    <div class="moon" aria-hidden="true"></div>
-  </div>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sherzod Norboboev | AI/NLP MSc Student & ML Engineer" />
+    <meta
+      name="twitter:description"
+      content="MSc NLP student at MBZUAI with backend engineering experience and interests in LLMs, RAG, speech processing, and applied AI systems."
+    />
+    <meta name="twitter:image" content="https://sherzodnorboboyev.github.io/og-image.svg" />
 
-  <header class="intro">
-    <h1 class="intro_hello">
-      Hello!
-      <span id="wave" class="emoji wave-hand animated" aria-hidden="true"></span>
-    </h1>
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    <h2 class="intro_tagline">
-      I'm <span class="myname">Sherzod Norboboev</span><br/>
-      <strong>NLP Master's Student @ MBZUAI</strong> &nbsp;|&nbsp; <strong>Former Oracle Backend Developer</strong>
-    </h2>
+          if (savedTheme === 'light' || (!savedTheme && !prefersDark)) {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          }
+        } catch (error) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
 
-    <!-- <div class="mytext" aria-label="Roles">
-      <div class="content">
-        <div class="container">
-          <ul class="list">
-            <li class="item">Natural Language Processing (BERT, GPT, MT, STT)</li>
-            <li class="item">Oracle SQL / PL/SQL</li>
-            <li class="item">Frontend: HTML5, CSS, JavaScript, AngularJS, Bootstrap</li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
-
-    <h2 class="intro_tagline">
-      I’m building AI skills in low-resource language processing, speech recognition, and human-AI interaction.
-      Previously, I developed ERP/Telecom features and data migrations on Oracle DB (19c).
-      <span id="emojiwavehand" class="emoji technologist" aria-hidden="true"></span>
-    </h2>
-
-    <h3 class="intro_contact">
-      <span>Get in touch</span>
-      <span class="emoji pointer" aria-hidden="true"></span>
-
-      <span id="emailme">
-        <a href="mailto:99sherzod786@gmail.com" class="highlight-link" rel="noopener noreferrer">
-          <span class="icon gmail" aria-hidden="true"></span> Email
-        </a>
-      </span>
-
-      <span id="telegram-link">
-        <a href="https://t.me/nnshshbb" target="_blank" class="highlight-link" rel="noopener noreferrer">
-          <span class="icon telegram" aria-hidden="true"></span> Telegram
-        </a>
-      </span>
-
-      <span id="linkedin-link">
-        <a href="https://www.linkedin.com/in/sherzod-norboboev-37b346155/" target="_blank" class="highlight-link" rel="noopener noreferrer">
-          <span class="icon linkedin" aria-hidden="true"></span> LinkedIn
-        </a>
-      </span>
-
-      <span id="github-link">
-        <a href="https://github.com/SherzodNorboboyev" target="_blank" class="highlight-link" rel="noopener noreferrer">
-          <span class="icon github" aria-hidden="true"></span> GitHub
-        </a>
-      </span>
-
-      <span id="kaggle-link">
-        <a href="https://www.kaggle.com/sherzodnorboboev" target="_blank" class="highlight-link" rel="noopener noreferrer">
-          <span class="icon kaggle" aria-hidden="true"></span> Kaggle
-        </a>
-      </span>
-    </h3>
-  </header>
-
-  <main>
-    <!-- Background -->
-    <section class="section background">
-      <h4 class="section_title">Background</h4>
-      <div class="section_content">
-        <p>
-          I’m pursuing a <strong>Master’s in Natural Language Processing (2025–Present)</strong> at
-          <a class="underline-link" href="https://mbzuai.ac.ae/" target="_blank" rel="noopener noreferrer">MBZUAI</a>, Abu Dhabi, UAE.
-          My coursework covers mathematics for AI (linear algebra, calculus, probability), core NLP (text preprocessing, parsing,
-          MT, language models, sentiment analysis, speech-to-text, transformers), and ML methods (search, decision trees, ensembles,
-          neural networks, reinforcement learning, Bayesian inference).
-        </p>
-        <p>
-          Previously, I worked as a <strong>Backend Developer</strong> at
-          <a class="underline-link" href="https://www.greenwhite.uz/main-en" target="_blank" rel="noopener noreferrer">Green White Solutions</a>
-          (Jan 2020 – Jun 2025), focusing on Oracle DB, PL/SQL, JavaScript, HTML/CSS, Bootstrap, and AngularJS.
-          I implemented features for ERP/Telecom systems and led data migrations to redesigned schemas.
-        </p>
-
-        <a class="status" href="sources/Sherzod-Norboboev-CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open CV PDF">
-          <div class="status_light" aria-hidden="true">
-            <div class="status_light_ring"></div>
-            <div class="status_light_led"></div>
-          </div>
-          <div class="status_message">Interested in working together? Reach out!</div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section skills" data-aos="slide-up">
-      <h4 class="section_title">Skills</h4>
-      <div class="section_content">
-        <div class="skillz">
-          <div class="skillz_category">
-            <div class="skillz_category_label">Programming Languages</div>
-            <ul>
-              <li class="skillz_category_item">Python</li>
-              <li class="skillz_category_item">JavaScript (ES6)</li>
-              <li class="skillz_category_item">Oracle SQL, PL/SQL</li>
-              <li class="skillz_category_item">HTML5, CSS3</li>
-            </ul>
-          </div>
-
-          <div class="skillz_category">
-            <div class="skillz_category_label">Libraries & Frameworks</div>
-            <ul>
-              <li class="skillz_category_item">NumPy, Matplotlib, Scikit-learn</li>
-              <li class="skillz_category_item">AngularJS, Bootstrap</li>
-            </ul>
-          </div>
-
-          <div class="skillz_category">
-            <div class="skillz_category_label">Databases & Tools</div>
-            <ul>
-              <li class="skillz_category_item">Oracle Database 19c</li>
-              <li class="skillz_category_item">PL/SQL Developer (v13–15)</li>
-              <li class="skillz_category_item">VS Code</li>
-              <li class="skillz_category_item">Git & GitHub</li>
-              <li class="skillz_category_item">SDLC, Scrum</li>
-            </ul>
-          </div>
-
-          <div class="skillz_category">
-            <div class="skillz_category_label">Languages</div>
-            <ul>
-              <li class="skillz_category_item">Uzbek (Native)</li>
-              <li class="skillz_category_item">English (IELTS 6.5)</li>
-              <li class="skillz_category_item">Russian (Elementary)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="section experience">
-      <h4 class="section_title">Experience</h4>
-      <div class="section_content">
-        <div class="jobs">
-          <article class="job">
-            <div class="time-place">
-              <div class="job_company">
-                <a href="https://mbzuai.ac.ae/" target="_blank" rel="noopener noreferrer">MBZUAI</a>
-              </div>
-              <div class="job_time">2025 – Present</div>
-            </div>
-            <div class="job_position">Master’s Student (Natural Language Processing)</div>
-            <ul>
-              <li>Transformer architectures (BERT/GPT), MT, speech-to-text, sentiment analysis.</li>
-              <li>ML foundations: search, decision trees, ensembles, neural networks, RL, Bayesian inference.</li>
-              <li>Mathematics for AI: linear algebra, calculus/optimization, probability & statistics.</li>
-            </ul>
-          </article>
-
-          <article class="job">
-            <div class="time-place">
-              <div class="job_company">
-                <a href="https://www.greenwhite.uz/main-en" target="_blank" rel="noopener noreferrer">Green White Solutions</a>
-              </div>
-              <div class="job_time">January 2020 – June 2025</div>
-            </div>
-            <div class="job_position">Backend Developer</div>
-            <ul>
-              <li>Developed features for ERP & Telecom products (Oracle DB, PL/SQL, JS/HTML/CSS, Bootstrap, AngularJS).</li>
-              <li>Migrated legacy data and redesigned table structures with efficient scripts.</li>
-              <li>Collaborated with team to deliver user-friendly interfaces and meet client requirements.</li>
-            </ul>
-          </article>
-        </div>
-        <a href="sources/Sherzod-Norboboev-CV.pdf" target="_blank" class="arrow-link" rel="noopener noreferrer">View My CV</a>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="section projects">
-    <h4 class="section_title">Projects</h4>
-    <div class="section_content">
-        <article class="project">
-        <h5>SmartupX ERP <small>(Jan 2020 – Aug 2020)</small></h5>
-        <p>Involved as a backend team member in ERP solution for distribution industry. Contributed to backend scripts, unit tests, and front-end integration.</p>
-        </article>
-    
-        <article class="project">
-        <h5>Verifix HR <small>(Nov 2020 – Apr 2023)</small></h5>
-        <p>Contributed to HR automation project (attendance, documentation, performance, payroll). Assisted in building backend modules in Oracle SQL/PLSQL.</p>
-        </article>
-
-        <article class="project">
-        <h5>Smartup5x License <small>(Aug 2020 – Apr 2022)</small></h5>
-        <p>Participated in licensing automation project for state pharmacies. Assisted in backend workflows and data structure design.</p>
-        </article>
-    </div>
-    </section>
-
-
-    <!-- Awards -->
-    <section class="section awards">
-      <h4 class="section_title">Awards</h4>
-      <div class="section_content">
-        <ul>
-          <li>Winner — Startup Weekend, Bukhara, 2023</li>
-          <li>Winner — Startup Weekend, Karshi, 2023</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer_copyright">
-      <div class="top"><span>Designed &amp; Developed by</span></div>
-      <div class="bottom">
-        <span><a href="https://sherzodnorboboyev.github.io/" target="_blank" rel="noopener noreferrer">Sherzod Norboboev</a> &#169;</span>
-        <img class="emoji" src="images/rockon.png" alt="rock on emoji" loading="lazy" />
-        <p>From July 30, 2023</p>
-        <p id="today" aria-live="polite"></p>
-      </div>
-    </div>
-  </footer>
-
-  <button id="top-button" aria-label="Scroll to top" style="display:inline-block;">
-    <img src="images/finger-up-emoji-clipart-21.png" alt="scroll to top" loading="lazy" />
-  </button>
-</div>
-
-<noscript>This site uses a little JavaScript for animations and theme toggling. Enable JS for the best experience.</noscript>
-
-<!-- Scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" defer></script>
-<script src="main.js" defer></script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

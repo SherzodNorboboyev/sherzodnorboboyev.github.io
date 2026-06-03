@@ -1,0 +1,15 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#050712"/>
+  <circle cx="180" cy="100" r="360" fill="#7AA2FF" fill-opacity="0.18"/>
+  <circle cx="1030" cy="600" r="360" fill="#A78BFA" fill-opacity="0.16"/>
+  <path d="M0 112H1200M0 224H1200M0 336H1200M0 448H1200M0 560H1200M120 0V630M240 0V630M360 0V630M480 0V630M600 0V630M720 0V630M840 0V630M960 0V630M1080 0V630" stroke="#94A3B8" stroke-opacity="0.08"/>
+  <rect x="76" y="72" width="1048" height="486" rx="44" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.12"/>
+  <text x="116" y="151" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="5" fill="#7AA2FF">MSc NLP @ MBZUAI</text>
+  <text x="116" y="254" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="800" fill="#F8FAFC">Sherzod Norboboev</text>
+  <text x="116" y="323" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="600" fill="#CBD5E1">AI/NLP MSc Student &amp; ML Engineer</text>
+  <text x="116" y="401" font-family="Inter, Arial, sans-serif" font-size="28" fill="#94A3B8">NLP | Machine Learning | LLMs | RAG | Speech Processing | Backend Systems</text>
+  <rect x="116" y="456" width="184" height="54" rx="27" fill="#F8FAFC"/>
+  <text x="208" y="491" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#050712">Portfolio</text>
+  <rect x="318" y="456" width="286" height="54" rx="27" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.16"/>
+  <text x="461" y="491" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#F8FAFC">sherzodnorboboyev.github.io</text>
+</svg>
