@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #f8fafc;
+  color: #0f172a;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root.dark {
+  color-scheme: dark;
+  background: #060712;
+  color: #f8fafc;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(122, 162, 255, 0.10), transparent 32rem),
+    #f8fafc;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(122, 162, 255, 0.12), transparent 34rem),
+    #060712;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(122, 162, 255, 0.28);
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: -5rem;
+  z-index: 100;
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  transition: top 160ms ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.dark .skip-link {
+  background: #f8fafc;
+  color: #020617;
+}
+
+.quiet-panel {
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 16px 45px rgba(15, 23, 42, 0.055);
+  backdrop-filter: blur(18px);
+}
+
+.dark .quiet-panel {
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  background: rgba(12, 17, 29, 0.64);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
